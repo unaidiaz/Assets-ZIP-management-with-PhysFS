@@ -26,7 +26,7 @@ This library is supported by the following archives:
 - WAD (DOOM engine archives)
 - VDF (Gothic I/II engine archives)
 - SLB (Independence War archives)
-
+![Image](http://www.alegsa.com.ar/Imagen/jerarquia_directorios.jpg)
 ```markdown
 Syntax highlighted code block
 
