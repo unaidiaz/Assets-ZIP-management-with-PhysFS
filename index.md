@@ -6,6 +6,8 @@
 
 PhysFs is a library that allows us to access files in an abstract way. This will be very useful for video games.
 
+![Image](http://www.alegsa.com.ar/Imagen/jerarquia_directorios.jpg)
+
 The programmer must indicate to the PhysFs library the directory with which he wants to work, in this way no writing or reading that comes from the library will be able to leave the indicated directory, with this we gain security, also thanks to the flexibility of the library we will be able to work with all types of files, including Zip files that will be very useful to reduce the memory of the files without losing anything
 
 In summary, using this library we obtain these advantages:
@@ -16,7 +18,7 @@ In summary, using this library we obtain these advantages:
 
 This library is supported by the following archives:
 
-- ZIP (pkZip/WinZip/Info-ZIP compatible)
+- ZIP (pkZip/WinZip/Info-ZIP compatible)                                                                 
 - 7Z (7zip archives)
 - ISO (ISO9660 files, CD-ROM images)
 - GRP (Build Engine groupfile archives)
@@ -26,7 +28,7 @@ This library is supported by the following archives:
 - WAD (DOOM engine archives)
 - VDF (Gothic I/II engine archives)
 - SLB (Independence War archives)
-![Image](http://www.alegsa.com.ar/Imagen/jerarquia_directorios.jpg)
+
 ```markdown
 Syntax highlighted code block
 
