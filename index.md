@@ -2,11 +2,30 @@
 
 - [PhysFs official page](https://icculus.org/physfs/)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# What is PhysFs?
 
+PhysFs is a library that allows us to access files in an abstract way. This will be very useful for video games.
 
+The programmer must indicate to the PhysFs library the directory with which he wants to work, in this way no writing or reading that comes from the library will be able to leave the indicated directory, with this we gain security, also thanks to the flexibility of the library we will be able to work with all types of files, including Zip files that will be very useful to reduce the memory of the files without losing anything
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+In summary, using this library we obtain these advantages:
+
+- Security, the library will not allow reading or writing outside of the given directory.
+- Flexibility, we can use Zip files as a directory. 
+- Saving space, by using a zip file to save assets we achieve that our game takes up less memory space.
+
+This library is supported by the following archives:
+
+.ZIP (pkZip/WinZip/Info-ZIP compatible)
+.7Z (7zip archives)
+.ISO (ISO9660 files, CD-ROM images)
+.GRP (Build Engine groupfile archives)
+.PAK (Quake I/II archive format)
+.HOG (Descent I/II HOG file archives)
+.MVL (Descent II movielib archives)
+.WAD (DOOM engine archives)
+.VDF (Gothic I/II engine archives)
+.SLB (Independence War archives)
 
 ```markdown
 Syntax highlighted code block
