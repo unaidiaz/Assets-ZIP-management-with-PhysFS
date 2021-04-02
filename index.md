@@ -16,16 +16,16 @@ In summary, using this library we obtain these advantages:
 
 This library is supported by the following archives:
 
-.ZIP (pkZip/WinZip/Info-ZIP compatible)
-.7Z (7zip archives)
-.ISO (ISO9660 files, CD-ROM images)
-.GRP (Build Engine groupfile archives)
-.PAK (Quake I/II archive format)
-.HOG (Descent I/II HOG file archives)
-.MVL (Descent II movielib archives)
-.WAD (DOOM engine archives)
-.VDF (Gothic I/II engine archives)
-.SLB (Independence War archives)
+- ZIP (pkZip/WinZip/Info-ZIP compatible)
+- 7Z (7zip archives)
+- ISO (ISO9660 files, CD-ROM images)
+- GRP (Build Engine groupfile archives)
+- PAK (Quake I/II archive format)
+- HOG (Descent I/II HOG file archives)
+- MVL (Descent II movielib archives)
+- WAD (DOOM engine archives)
+- VDF (Gothic I/II engine archives)
+- SLB (Independence War archives)
 
 ```markdown
 Syntax highlighted code block
