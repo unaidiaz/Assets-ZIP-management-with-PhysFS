@@ -29,6 +29,12 @@ This library is supported by the following archives:
 - VDF (Gothic I/II engine archives)
 - SLB (Independence War archives)
 
+# Main objectives
+
+The general objective of using this library is to have the assest in a zip to get the advantages mentioned in the previous point.
+
+Our goal will be to move from the first image to the second.
+
 ```markdown
 Syntax highlighted code block
 
