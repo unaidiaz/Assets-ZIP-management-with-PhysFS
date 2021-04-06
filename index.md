@@ -2,6 +2,20 @@
 
 - [PhysFs official page](https://icculus.org/physfs/)
 
+# Main objectives
+
+The general objective of using this library is to have the assest in a zip to get the advantages mentioned in the previous point.
+
+Our goal will be to move from the first image to the second.
+
+- First image (what we have):
+
+![Image](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/blob/main/Docs/images/old.PNG?raw=true)
+
+- Second image (our objetive):
+
+![Image](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/blob/main/Docs/images/new.PNG?raw=true)
+
 # What is PhysFs?
 
 PhysFs is a library that allows us to access files in an abstract way. This will be very useful for video games.
@@ -29,19 +43,7 @@ This library is supported by the following archives:
 - VDF (Gothic I/II engine archives)
 - SLB (Independence War archives)
 
-# Main objectives
-
-The general objective of using this library is to have the assest in a zip to get the advantages mentioned in the previous point.
-
-Our goal will be to move from the first image to the second.
-
-- First image (what we have):
-
-![Image](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/blob/main/Docs/images/old.PNG?raw=true)
-
-- Second image (our objetive):
-
-![Image](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/blob/main/Docs/images/new.PNG?raw=true)
+# PhysFs functions
 ```markdown
 ```
 Syntax highlighted code block
