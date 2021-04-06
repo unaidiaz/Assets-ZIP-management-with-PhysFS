@@ -35,11 +35,11 @@ The general objective of using this library is to have the assest in a zip to ge
 
 Our goal will be to move from the first image to the second.
 
-- First image:
+- First image (what we have):
 
 ![Image](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/blob/main/Docs/images/old.PNG?raw=true)
 
-- Second image:
+- Second image (our objetive):
 
 ![Image](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/blob/main/Docs/images/new.PNG?raw=true)
 ```markdown
