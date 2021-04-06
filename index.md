@@ -38,7 +38,7 @@ Our goal will be to move from the first image to the second.
 
 ![Image](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/blob/main/Docs/images/new%20version%20of%20the%20output.PNG)
 
-![Image](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/blob/main/Docs/images/new%20version%20of%20the%20output.jpg)
+![Image](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/blob/main/Docs/images/new%20version%20of%20the%20output.jpg?raw=true)
 ```markdown
 ```
 Syntax highlighted code block
