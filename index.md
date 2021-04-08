@@ -1,7 +1,7 @@
 # Links
 
 - [PhysFs official page](https://icculus.org/physfs/)
-
+- [PhysFs documentation](https://icculus.org/physfs/docs/html/globals.html)
 # Main objectives
 
 The general objective of using this library is to have the assest in a zip to get the advantages mentioned in the previous point.
