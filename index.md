@@ -57,32 +57,36 @@ This library is supported by the following archives:
 
 This function initializes the library, and should be called at the beginning.
 
-* input: Don't need any element per parameter.
-* output: Nonzero on success, zero on error, the error can be specified with the function PHYSFS_getLastError().
++ input: Don't need any element per parameter.
++ output: Nonzero on success, zero on error, the error can be specified with the function PHYSFS_getLastError().
 
 - PHYSFS_deinit(): 
 
 Deinitialize the PhysicsFS library, closes any files opened via PhysicsFS, blanks the search/write paths, frees memory.
 
-* input: Don't need any element per parameter.
-* output: Nonzero on success, zero on error, the error can be specified with the function PHYSFS_getLastError().
++ input: Don't need any element per parameter.
++ output: Nonzero on success, zero on error, the error can be specified with the function PHYSFS_getLastError().
 
 - PHYSFS_addToSearchPath(const char* newDir, int appendToPath): 
 
 Add an archive or directory to the search path.
 
-* input: newDir:.
-* output:.
++ input: newDir:.
++ output:.
 
+- PHYSFS_mount(const char* newDir, const char* mountPoint, int appendToPath ):
 
+- PHYSFS_openRead(const char* filename):
 
-PHYSFS_mount(const char* newDir, const char* mountPoint, int appendToPath ):
+- PHYSFS_fileLength(PHYSFS_file* handle):
 
-PHYSFS_openRead(const char* filename): 
-PHYSFS_fileLength(PHYSFS_file* handle):
-PHYSFS_Read(PHYSFS_File* handle, void* buffer, PHYSFS_uint32 objSize, PHYSFS_uint32 objCount): reads data from a PhysFS filehandle. Handle is the handle returned from PHYSFS_openRead(), buffer is where data info is stored, objSize is size in bytes of objects readed from handle and objCount number of objects to read from handle.
-PHYSFS_close(PHYSFS_file* handle):
-PHYSFS_getLastErrorCode():
+- PHYSFS_Read(PHYSFS_File* handle, void* buffer, PHYSFS_uint32 objSize, PHYSFS_uint32 objCount):
+
+- PHYSFS_openRead():
+
+- PHYSFS_close(PHYSFS_file* handle):
+
+- PHYSFS_getLastErrorCode():
 
 Syntax highlighted code block
 
