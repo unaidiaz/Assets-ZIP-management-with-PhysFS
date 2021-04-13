@@ -14,9 +14,9 @@ ModuleScene::~ModuleScene()
 
 bool ModuleScene::CleanUp() 
 {
-	bool resultado = true;
-
-	return resultado;
+	bool result = true;
+	
+	return result;
 }
 bool ModuleScene::Start() 
 {

@@ -90,3 +90,7 @@ States Player::Postupdate()
 	app->render->Blit(playerText, position.x, position.y, &rect);
 	return States::Continue;
 }
+bool Player::CleanUp() {
+	app->Texture->Unload(playerText);
+	return true;
+}

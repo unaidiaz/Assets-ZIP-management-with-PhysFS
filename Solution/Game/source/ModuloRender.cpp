@@ -1,31 +1,31 @@
 #include"ModuloRender.h"
 #include"Aplication.h"
-moduloRender::moduloRender(aplication *APP):Module(APP) {
+moduleRender::moduleRender(aplication *APP):Module(APP) {
 
 }
-moduloRender::~moduloRender() {
+moduleRender::~moduleRender() {
 
 }
-bool moduloRender::Init() {
+bool moduleRender::Init() {
 	int prop = SDL_RENDERER_PRESENTVSYNC;
 	renderer = SDL_CreateRenderer(app->Window->window, -1, prop);
 	SDL_RenderSetLogicalSize(renderer, WINDOWWIDTH, WINDOWHIGH);
 	return true;
 }
-States moduloRender::Preupdate() {
+States moduleRender::Preupdate() {
 	SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
 	SDL_RenderClear(renderer);
 	return States::Continue;
 }
-States moduloRender::Postupdate() {
+States moduleRender::Postupdate() {
 	SDL_RenderPresent(renderer);
 	return States::Continue;
 }
-bool moduloRender::CleanUp() {
+bool moduleRender::CleanUp() {
 	SDL_DestroyRenderer(renderer);
 	return true;
 }
-void moduloRender::Blit(SDL_Texture* texture, int x, int y, SDL_Rect* texturesize) {
+void moduleRender::Blit(SDL_Texture* texture, int x, int y, SDL_Rect* texturesize) {
 	SDL_Rect rect;
 	rect.x = x;
 	rect.y = y;

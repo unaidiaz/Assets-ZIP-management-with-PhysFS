@@ -1,7 +1,7 @@
 #include"Aplication.h"
 #include"Module.h"
 aplication::aplication() {
-	//hacer aqui el new de todo y meter en el array de punteros modulos
+	//
 	Modules[0] = Window = new ModuleWindow(this);
 	Modules[1] = Input = new ModuleInput(this);
 	Modules[2] = Texture = new ModuleTextures(this);
@@ -10,16 +10,16 @@ aplication::aplication() {
 	Modules[5] = scene = new ModuleScene(this);
 	Modules[6] = map = new Map(this);
 	Modules[7] = player = new Player(this);
-	Modules[8] = render = new moduloRender(this);
+	Modules[8] = render = new moduleRender(this);
 
 }
 aplication::~aplication() {
 
 }
-//aqui loops
+//
 bool aplication::InitModules() {
 	bool result = true;
-	//iniciar primero todos y luego empezar los que tengan que empezar (al principio todos tambien)
+	//
 	for (int a = 0; a < MAXMODULES && result == true; a++) {
 		result = Modules[a]->Init();
 	}
@@ -39,14 +39,16 @@ States aplication::LoopModules() {
 	for (int a = 0; a < MAXMODULES && result == States::Continue; a++) {
 		result = Modules[a]->Postupdate();
 	}
-	//hacer pre update post
+	
+	//
 	return result;
 }
 bool aplication::CleanModules() {
 	bool result = true;
-	for (int a = 0; a < MAXMODULES && result == true; a++) {
+	for (int a = MAXMODULES-1; a > 0 && result == true; a--) {
 		result = Modules[a]->CleanUp();
+		delete Modules[a];
 	}
-	//limpiar todo los modulos
+	//
 	return result;
 }

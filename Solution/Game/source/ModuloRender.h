@@ -3,12 +3,12 @@
 #include"Globals.h"
 #include"Module.h"
 #include"External/SDL/include/SDL.h"
-//#include"Aplicaccion.h"
 
-class moduloRender:public Module {
+
+class moduleRender:public Module {
 public:
-	moduloRender(aplication *APP);
-	~moduloRender();
+	moduleRender(aplication *APP);
+	~moduleRender();
 	bool Init()override;
 	States Preupdate()override;
 	States Postupdate()override;

@@ -8,7 +8,7 @@ class Module {
 public:
 	aplication* app;
 	Module(aplication* APP);
-	~Module();
+	virtual ~Module();
 	virtual bool Init();
 	virtual bool Start();
 	virtual States Preupdate();

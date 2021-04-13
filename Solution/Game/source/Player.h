@@ -12,6 +12,7 @@ public:
 	States Preupdate()override;
 	States Update()override;
 	States Postupdate()override;
+	bool CleanUp()override;
 private:
 	Animation front;
 	Animation back;

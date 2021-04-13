@@ -27,6 +27,7 @@ SDL_Texture* ModuleTextures::Load(const char* archivo) {
 	for (int a = 0; a < MAXTEXTURES; a++) {
 		if (textures[a] == nullptr) {
 			textures[a] = texture;
+			SDL_FreeSurface(surface);
 			break;
 		}
 	}
@@ -42,7 +43,7 @@ void ModuleTextures::Unload(SDL_Texture* textura) {
 	}
 }
 bool ModuleTextures::CleanUp() {
-	bool resultado = true;
+	bool result = true;
 	for (int a = 0; a < MAXTEXTURES; a++) {
 		if (textures[a] != nullptr) {
 			SDL_DestroyTexture(textures[a]);
@@ -50,5 +51,5 @@ bool ModuleTextures::CleanUp() {
 		}
 	}
 	IMG_Quit();
-	return resultado;
+	return result;
 }

@@ -24,7 +24,7 @@ public:
 	ModuleWindow* Window = nullptr;
 	ModuleInput* Input = nullptr;
 	ModuleTextures* Texture = nullptr;
-	moduloRender* render = nullptr;
+	moduleRender* render = nullptr;
 	ModuleScene* scene = nullptr;
 	Audio* audio = nullptr;
 	Map* map = nullptr;

@@ -261,7 +261,7 @@ bool Map::Load(const char* filename)
 
 	//TODO 6:load xml file through buffer (1 line)
 	pugi::xml_parse_result result = mapFile.load_buffer(buffer, size);
-
+	delete[] buffer;
 
 	if (result == NULL)ret = false;
 
