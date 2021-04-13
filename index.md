@@ -6,6 +6,8 @@
 
 - [Handout](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/tree/main/Handout)
 
+- [Solution](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/tree/main/Solution)
+
 - [Release](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/releases/tag/1.0)
 
 # Main objectives
