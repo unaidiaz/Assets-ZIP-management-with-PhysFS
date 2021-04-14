@@ -59,37 +59,95 @@ This library is supported by the following archives:
 
 This function initializes the library, and should be called at the beginning.
 
-+ input: Don't need any element per parameter.
-+ output: Nonzero on success, zero on error, the error can be specified with the function PHYSFS_getLastError().
++ Input: 
+
+Don't need any element per parameter.
+
++ Output:
+
+ Nonzero on success, zero on error, the error can be specified with the function PHYSFS_getLastError().
 
 ### PHYSFS_deinit(): 
 
 Deinitialize the PhysicsFS library, closes any files opened via PhysicsFS, blanks the search/write paths, frees memory.
 
-+ input: Don't need any element per parameter.
-+ output: Nonzero on success, zero on error, the error can be specified with the function PHYSFS_getLastError().
++ Input: 
 
-### PHYSFS_mount(const char* newDir, const char* mountPoint, int appendToPath ): 
+Don't need any element per parameter.
+
++ Output: 
+
+Nonzero on success, zero on error, the error can be specified with the function PHYSFS_getLastError().
+
+### PHYSFS_mount(const char * newDir,const char * mountPoint,int appendToPath ):
 
 Add an archive or directory to the search path.
 
-+ input: newDir:.
-+ output:.
++ Input:
+
+**NewDir:** Directory or archive to add to the path.
+
+**MountPoint:** Location in the interpolated tree that this archive will be "mounted". NULL or "" is equivalent to "/".
+
+**AppendToPath:** Nonzero to append to search path, zero to prepend.
+
++ Output: 
+
+Nonzero if added to path, zero on failure (bogus archive, dir missing, etc). Use PHYSFS_getLastErrorCode() to obtain the specific error.
 
 ### PHYSFS_openRead(const char* filename):
 
-### PHYSFS_fileLength(PHYSFS_file* handle):
+Open a file for reading.
 
-### PHYSFS_Read(PHYSFS_File* handle, void* buffer, PHYSFS_uint32 objSize, PHYSFS_uint32 objCount):
++ Input: 
 
-### PHYSFS_openRead():
+**Filename:** File to open.
+
++ Output:
+
+A valid  PHYSFS_File *  on success, NULL on error. Use PHYSFS_getLastErrorCode() to obtain the specific error.
 
 ### PHYSFS_close(PHYSFS_file* handle):
 
-### PHYSFS_getLastErrorCode():
+Close a PhysicsFS filehandle.
 
-## PHYSFS functions
-Syntax highlighted code block
++ Input: 
+
+**handle:** File to close.
+
++ Output:
+
+Nonzero on success, zero on error. Use PHYSFS_getLastErrorCode() to obtain the specific error.
+
+### PHYSFS_fileLength(PHYSFS_file* handle):
+
+Get total length of a file in bytes.
+
++ Input: 
+
+**Handle:** handle returned from PHYSFS_open*() -  (PHYSFS_File *).
+
++ Output:
+
+size in bytes of the file, -1 if can't be determined.
+
+### PHYSFS_Read (PHYSFS_File* handle, void* buffer, PHYSFS_uint32 objSize, PHYSFS_uint32 objCount):
+
+Read data from a PhysicsFS filehandle, the file must be opened for reading with PHYSFS_openRead(const char* filename).
+
++ Input: 
+
+**Handle:** handle returned from PHYSFS_openRead().
+
+**Buffer:** buffer to store read data into.obj
+
+**Size:** size in bytes of objects being read from (handle).
+
+**ObjCount:** number of (objSize) objects to read from (handle).
+
++ Output:
+
+number of objects read, -1 if complete failure.
 
 # Header 1
 ## Header 2
