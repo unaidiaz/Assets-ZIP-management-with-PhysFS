@@ -53,7 +53,7 @@ This library is supported by the following archives:
 
 # PhysFs
 
-## functions
+## PHYSFS functions
 
 ### PHYSFS_init(): 
 
@@ -69,14 +69,12 @@ Deinitialize the PhysicsFS library, closes any files opened via PhysicsFS, blank
 + input: Don't need any element per parameter.
 + output: Nonzero on success, zero on error, the error can be specified with the function PHYSFS_getLastError().
 
-### PHYSFS_addToSearchPath(const char* newDir, int appendToPath): 
+### PHYSFS_mount(const char* newDir, const char* mountPoint, int appendToPath ): 
 
 Add an archive or directory to the search path.
 
 + input: newDir:.
 + output:.
-
-### PHYSFS_mount(const char* newDir, const char* mountPoint, int appendToPath ):
 
 ### PHYSFS_openRead(const char* filename):
 
@@ -90,6 +88,7 @@ Add an archive or directory to the search path.
 
 ### PHYSFS_getLastErrorCode():
 
+## PHYSFS functions
 Syntax highlighted code block
 
 # Header 1
