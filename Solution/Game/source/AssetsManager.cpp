@@ -15,7 +15,7 @@ AssetsManager::~AssetsManager()
 bool AssetsManager::Init() 
 {
 	//TODO 3: add the search path (1 line)
-	PHYSFS_addToSearchPath("Assets.zip", 0);
+	PHYSFS_mount("Assets.zip",NULL, 0);
 	return true;
 }
 int AssetsManager::MakeLoad(char** buffer,const char* fileName) 
