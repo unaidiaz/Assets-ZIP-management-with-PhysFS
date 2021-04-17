@@ -185,26 +185,40 @@ This is what you will find when you compile the handout.
 
 This is the solution that is expected after doing the TODOS.
 
+![Image](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/blob/main/Docs/images/im02.PNG?raw=true)
+
 ## TODO 1
 
 Initialize the Phys Fs library.
+
+![Image](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/blob/main/Docs/images/im03.PNG?raw=true)
 
 ## TODO 2
 
 Deinitialize the phys Fs library.
 
+![Image](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/blob/main/Docs/images/im04.PNG?raw=true)
+
 ## TODO 3
 
 Add a path to the library.
+
+![Image](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/blob/main/Docs/images/im05.PNG?raw=true)
 
 ## TODO 4
 
 Call the function MakeLoad to obtain the information buffer and be able to return a SDL_RWops structure for the textures and the audio.
 
+![Image](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/blob/main/Docs/images/im06.PNG?raw=true)
+
 ## TODO 5
 
 Obtain the information buffer with the library functions and return the size of this.
 
+![Image](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/blob/main/Docs/images/im07.PNG?raw=true)
+
 ## TODO 6
 
 Get only the information buffer, then load the XML file, finally delete the information buffer.
+
+![Image](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/blob/main/Docs/images/im08.PNG?raw=true)
