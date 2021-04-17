@@ -55,13 +55,13 @@ This library is supported by the following archives:
 
 ## PHYSFS functions
 
-### PHYSFS_init(): 
+### PHYSFS_init(const char* argv0): 
 
 This function initializes the library, and should be called at the beginning.
 
 + Input: 
 
-Don't need any element per parameter.
+**argv0:** The argv[0] string passed to your program's mainline. This may be NULL on most platforms.
 
 + Output:
 
