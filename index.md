@@ -157,6 +157,8 @@ do all the TODOS to make sure you have understood the concepts that have been ex
 
 This is what you will find when you compile the handout.
 
+![Image](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/blob/main/Docs/images/im01.PNG?raw=true)
+
 ## Expected solution
 
 This is the solution that is expected after doing the TODOS.
