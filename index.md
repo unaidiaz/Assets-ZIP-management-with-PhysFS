@@ -149,28 +149,38 @@ Read data from a PhysicsFS filehandle, the file must be opened for reading with 
 
 number of objects read, -1 if complete failure.
 
-# Header 1
-## Header 2
-### Header 3
+# TODOS
 
-- Bulleted
-- List
+do all the TODOS to make sure you have understood the concepts that have been explained and the functions of Phys Fs.
 
-1. Numbered
-2. List
-```markdown
-```
-**Bold** and _Italic_ and `Code` text
+## Handout (Before TODOS)
 
-[Link](url) and ![Image](src)
+This is what you will find when you compile the handout.
 
+## Expected solution
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+This is the solution that is expected after doing the TODOS.
 
-### Jekyll Themes
+## TODO 1
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Initialize the Phys Fs library.
 
-### Support or Contact
+## TODO 2
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Deinitialize the phys Fs library.
+
+## TODO 3
+
+Add a path to the library.
+
+## TODO 4
+
+Call the function MakeLoad to obtain the information buffer and be able to return a SDL_RWops structure for the textures and the audio.
+
+## TODO 5
+
+Obtain the information buffer with the library functions and return the size of this.
+
+## TODO 6
+
+Get only the information buffer, then load the XML file, finally delete the information buffer.
