@@ -30,7 +30,15 @@ PhysFs is a library that allows us to access files in an abstract way. This will
 
 ![Image](http://www.alegsa.com.ar/Imagen/jerarquia_directorios.jpg)
 
-The programmer must indicate to the PhysFs library the directory with which he wants to work, in this way no writing or reading that comes from the library will be able to leave the indicated directory, with this we gain security, also thanks to the flexibility of the library we will be able to work with all types of files, including Zip files that will be very useful to reduce the memory of the files without losing anything
+The programmer must indicate to the PhysFs library the directory with which he wants to work, in this way no writing or reading that comes from the library will be able to leave the indicated directory, with this we gain security, also thanks to the flexibility of the library we will be able to work with all types of files, including Zip files that will be very useful to reduce the memory of the files without losing anything.
+
+One of the main points and features of a filesystem is abstraction. With a filesystem, we can organize our data into files, directories, and other constructs, and manipulate them in various ways. To open a file, you need only its path; it's not necessary to figure out the exact location on disk and instruct the hard drive controller to move the read head to that position.
+
+This data abstraction is important for several reasons:
+
+- Portability; it's not necessary to port every program for all hardware, only the device drivers need to be changed.
+- Security; the user is not relied on ‒ or even allowed ‒ to access the drive directly.
+- Convenience; files don't actually exist as separate entities on disk, but it sure makes it easier for people to use computers.
 
 In summary, using this library we obtain these advantages:
 
