@@ -157,6 +157,20 @@ Read data from a PhysicsFS filehandle, the file must be opened for reading with 
 
 number of objects read, -1 if complete failure.
 
+# SDL_RWops
+
+SDL_RWops is a structure that provides an abstract interface to stream I/O. RWops might be fed by a memory buffer, or a file on disk, or a connection to a web server.
+
+we will use the following functions:
+
+- **IMG_Load_RW(SDL_RWops* src, int freesrc):** This can load images from memory buffer. The image is load from src, if we want that src is automatically freed or closed we have to add an non-zero value in freesrc.
+
+- **Mix_LoadWAV_RW(SDL_RWops* src, int freesrc):** This can load WAVE, AIFF, RIFF, OGG, and VOC formats from memory buffer. The sample is loaded from the src pointer. As the previous function, we can add a non-zero value in freesrc to close or free automatically src.
+
+- **Mix_LoadMUS_RW(SDL_RWops* src, int freesrc):** This can load WAVE, MOD, MIDI, OGG, MP3, FLAC from memory buffer. Again, as functions mentioned before, src is the pointer that the sample is loaded from this and freesrc with a non-zero value is to free or close automatically.
+
+- **SDL_RWFromConstMem(const void* mem, int size):** this prepares a read-only buffer memory buffer for use with SDL_RWops. mem is a pointer to a read-only buffer, size the buffer size in bytes.
+
 # TODOS
 
 do all the TODOS to make sure you have understood the concepts that have been explained and the functions of Phys Fs.
