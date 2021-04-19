@@ -8,7 +8,7 @@
 
 - [Handout](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/tree/main/Handout)
 
-- [Presentation](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/tree/main/Docs/presentation)
+- [Presentation](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/blob/main/Docs/presentation/Assets%20ZIP%20management%20with%20PhysFS.pdf)
 
 - [Solution](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/tree/main/Solution)
 
