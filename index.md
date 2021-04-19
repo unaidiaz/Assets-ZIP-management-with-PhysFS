@@ -178,6 +178,21 @@ we will use the following functions:
 According to its website it does not make a copy of the buffer so we must keep it.
 
 "This memory buffer is not copied by the RWops; the pointer you provide must remain valid until you close the stream. Closing the stream will not free the original buffer."
+# Code structure
+
+We have decided that the best option to integrate the Phys fs library is to create a module that is created in the app at the beginning of the execution with dynamic memory and that is eliminated at the end of the whole, this module manages everything that has to do with the library, and therefore with the textures, music and everything that must be loaded.
+
+this will be the structure that will later be seen in the TODOS:
+
++ A constructor where we will initialize the library with the Init(); function.
+
++ A destructor where we will deinizialize the library and eliminating all the memory and files that are open.
+
++ A Load () function that will call the MakeLoad () function to first get the information buffer and later it can return the SDLRWops structure to load the textures and audios.
+
++ A MakeLoad () function that will return the size of the buffer with information and the same buffer to load files that do not need the SDLRWops structure, only the information buffer such as xml files.
+
+As we can see, it is a very simple structure but that works as it should and that will provide us with many advantages.
 
 # TODOS
 
