@@ -192,6 +192,10 @@ this will be the structure that will later be seen in the TODOS:
 
 + A MakeLoad () function that will return the size of the buffer with information and the same buffer to load files that do not need the SDLRWops structure, only the information buffer such as xml files.
 
++ A GetlatsBuffer () function to obtain the buffer to be able to eliminate it in case of loading an xml file.
+
++ A delete Buffer function to delete the information right after loading it to avoid memory leaks.
+
 As we can see, it is a very simple structure but that works as it should and that will provide us with many advantages.
 
 # TODOS
