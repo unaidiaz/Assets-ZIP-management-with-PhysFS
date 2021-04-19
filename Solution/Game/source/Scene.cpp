@@ -32,6 +32,7 @@ States ModuleScene::Preupdate()
 }
 States ModuleScene::Update()
 {
+	
 	if (app->Input->Keys[SDL_SCANCODE_ESCAPE] == KeyState::KeyDown) 
 	{
 		return States::Exit;

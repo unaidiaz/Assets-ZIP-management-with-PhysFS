@@ -50,6 +50,7 @@ States Player::Preupdate()
 }
 States Player::Update()
 {
+	
 	if (app->Input->Keys[SDL_SCANCODE_W] == KeyState::KeyDown) 
 	{
 		counter++;
@@ -77,7 +78,6 @@ States Player::Update()
 		actual = &left;
 		actual->Update();
 	}
-	
 	return States::Continue;
 }
 States Player::Postupdate()

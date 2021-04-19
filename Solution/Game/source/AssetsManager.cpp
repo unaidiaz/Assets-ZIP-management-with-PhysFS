@@ -18,7 +18,14 @@ bool AssetsManager::Init()
 	PHYSFS_mount("Assets.zip",NULL, 0);
 	return true;
 }
-int AssetsManager::MakeLoad(char** buffer,const char* fileName) 
+bool AssetsManager::DeleteBuffer() {
+	delete[] buffer;
+	return true;
+}
+char* AssetsManager::GetLastBuffer() {
+	return buffer;
+}
+int AssetsManager::MakeLoad(const char* fileName) 
 {
 	int ret = 0;
 	//TODO 5: get the information buffer, and its size with the functions and variables of the library (5 line ~)
@@ -27,8 +34,8 @@ int AssetsManager::MakeLoad(char** buffer,const char* fileName)
 	if (data_file != nullptr)
 	{
 		int file_lenght = PHYSFS_fileLength(data_file);
-		*buffer = new char[(int)file_lenght];
-		int readed = PHYSFS_read(data_file, *buffer, 1, (int)file_lenght);
+		buffer = new char[(int)file_lenght];
+		int readed = PHYSFS_read(data_file, buffer, 1, (int)file_lenght);
 		if (readed != file_lenght)
 		{
 			delete[] buffer;
@@ -44,7 +51,7 @@ SDL_RWops* AssetsManager::Load(const char* fileName)
 {
 	//TODO 4: call the MakeLoad functionand get the RWops structure to load the data(3 line)
 	
-	char* buffer = nullptr;
-	int size = MakeLoad(&buffer, fileName);
+	
+	int size = MakeLoad(fileName);
 	return SDL_RWFromConstMem(buffer, size);
 }

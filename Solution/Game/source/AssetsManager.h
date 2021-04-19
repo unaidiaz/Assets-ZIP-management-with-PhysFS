@@ -8,7 +8,9 @@ public:
 	~AssetsManager();
 	bool Init();
 	SDL_RWops* Load(const char* fileName);
-	int MakeLoad(char** buffer, const char* fileName);
-
+	int MakeLoad( const char* fileName);
+	bool DeleteBuffer();
+	char* GetLastBuffer();
+	char* buffer = nullptr;
 };
 #endif // !_ASSETSMANAGER_H_

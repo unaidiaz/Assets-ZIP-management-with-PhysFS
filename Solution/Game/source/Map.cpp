@@ -256,12 +256,11 @@ bool Map::Load(const char* filename)
 	bool ret = true;
 	SString tmp("%s%s", folder.GetString(), filename);
 
-	char* buffer = nullptr;
-	int size=app->Assets->MakeLoad(&buffer, tmp.GetString());
+	int size=app->Assets->MakeLoad(tmp.GetString());
 
 	//TODO 6:load xml file through buffer (1 line)
-	pugi::xml_parse_result result = mapFile.load_buffer(buffer, size);
-	delete[] buffer;
+	pugi::xml_parse_result result = mapFile.load_buffer(app->Assets->GetLastBuffer(), size);
+	app->Assets->DeleteBuffer();
 
 	if (result == NULL)ret = false;
 

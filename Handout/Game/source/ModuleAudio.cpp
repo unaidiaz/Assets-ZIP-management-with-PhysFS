@@ -166,7 +166,7 @@ unsigned int Audio::LoadFx(const char* path)
 		}
 		ret++;
 	}
-	
+	app->Assets->DeleteBuffer();
 
 	return ret;
 }

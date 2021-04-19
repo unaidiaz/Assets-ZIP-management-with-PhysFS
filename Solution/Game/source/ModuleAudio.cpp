@@ -129,8 +129,10 @@ bool Audio::PlayMusic(const char* path, float fadeTime)
 			if (Mix_FadeInMusic(music, -1, (int)(fadeTime * 1000.0f)) < 0)
 			{
 				
+				
 				ret = false;
 			}
+			
 		}
 		else
 		{
@@ -155,6 +157,7 @@ unsigned int Audio::LoadFx(const char* path)
 
 	Mix_Chunk* chunk=nullptr;
 	chunk=Mix_LoadWAV_RW(app->Assets->Load(path),1);
+	app->Assets->DeleteBuffer();
 	for (int a = 0; a < MAX_FX; a++) 
 	{
 		if (fx[a] == nullptr) {

@@ -18,7 +18,7 @@ bool AssetsManager::Init()
 	
 	return true;
 }
-int AssetsManager::MakeLoad(char** buffer,const char* fileName) 
+int AssetsManager::MakeLoad(const char* fileName) 
 {
 	int ret = 0;
 	//TODO 5: get the information buffer, and its size with the functions and variables of the library (5 line ~)
@@ -32,4 +32,11 @@ SDL_RWops* AssetsManager::Load(const char* fileName)
 	//TODO 4: call the MakeLoad functionand get the RWops structure to load the data(3 line)
 	
 	return nullptr;
+}
+bool AssetsManager::DeleteBuffer() {
+	delete[] buffer;
+	return true;
+}
+char* AssetsManager::GetLastBuffer() {
+	return buffer;
 }

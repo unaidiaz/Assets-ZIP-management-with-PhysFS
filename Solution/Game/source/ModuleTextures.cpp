@@ -31,11 +31,13 @@ SDL_Texture* ModuleTextures::Load(const char* archivo) {
 			break;
 		}
 	}
+	app->Assets->DeleteBuffer();
 	return texture;
 }
 void ModuleTextures::Unload(SDL_Texture* textura) {
 	for (int a = 0; a < MAXTEXTURES; a++) {
 		if (textures[a] == textura) {
+			
 			SDL_DestroyTexture(textura);
 			textures[a] = nullptr;
 			break;

@@ -30,6 +30,7 @@ SDL_Texture* ModuleTextures::Load(const char* archivo) {
 			break;
 		}
 	}
+	app->Assets->DeleteBuffer();
 	return texture;
 }
 void ModuleTextures::Unload(SDL_Texture* textura) {
