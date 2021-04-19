@@ -4,6 +4,8 @@
 
 - [PhysFs documentation](https://icculus.org/physfs/docs/html/globals.html)
 
+- [SDLRWops](https://wiki.libsdl.org/SDL_RWops)
+
 - [Handout](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/tree/main/Handout)
 
 - [Presentation](https://github.com/unaidiaz/Assets-ZIP-management-with-PhysFS/tree/main/Docs/presentation)
@@ -172,6 +174,10 @@ we will use the following functions:
 - **Mix_LoadMUS_RW(SDL_RWops* src, int freesrc):** This can load WAVE, MOD, MIDI, OGG, MP3, FLAC from memory buffer. Again, as functions mentioned before, src is the pointer that the sample is loaded from this and freesrc with a non-zero value is to free or close automatically.
 
 - **SDL_RWFromConstMem(const void* mem, int size):** this prepares a read-only buffer memory buffer for use with SDL_RWops. mem is a pointer to a read-only buffer, size the buffer size in bytes.
+
+According to its website it does not make a copy of the buffer so we must keep it.
+
+"This memory buffer is not copied by the RWops; the pointer you provide must remain valid until you close the stream. Closing the stream will not free the original buffer."
 
 # TODOS
 
